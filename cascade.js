@@ -8,7 +8,7 @@ var cascade = (function () {
         getLookupProperties: getLookupProperties,
         getDataProperties: getDataProperties,
         isOptionalDependent: isOptionalDependent,
-    }
+    };
 
     function cascade(entity, config) {
         var entityName = getEntityName(entity);
@@ -116,7 +116,6 @@ var cascade = (function () {
     }
 
     function getDependentProperties(entity) {
-
         return !entity ?
             [] :
             entity.entityType.navigationProperties
@@ -126,7 +125,6 @@ var cascade = (function () {
     }
 
     function getLookupProperties(entity) {
-
         return !entity ?
             [] :
             entity.entityType.navigationProperties
@@ -136,7 +134,6 @@ var cascade = (function () {
     }
 
     function getDataProperties(entity) {
-
         return !entity ?
             [] :
             entity.entityType.dataProperties
